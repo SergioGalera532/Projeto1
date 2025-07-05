@@ -10,13 +10,14 @@ st.text("Este é um texto simples")
 st.markdown("Este é um **6666tesxto em negrito**")
 st.latex(r'''e^{i\pi} + 1 = 0''')
 
-df =pd.DataFrame({
+data = {
     'Nome': ['Alice', 'Bob', 'Charlie'],
     'Idade': [25, 30, 35],
-    'Cidade': ['Nova York', 'Los Angeles', 'Chicago']
+    'Cidade': ['Nova York', 'Los Angeles', 'Chicago'],
     'Salario': [70000, 80000, 90000]
-})
+}
 
+df = pd.DataFrame(data)
 st.dataframe(df)
 st.table(df)
 
